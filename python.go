@@ -7,8 +7,8 @@ import (
 	"os/exec"
 )
 
-func runPythonScript(cmdAndArgs ...string) error {
-	cmd := exec.Command("python3", cmdAndArgs...)
+func runNiimprint(cmdAndArgs ...string) error {
+	cmd := exec.Command("niimprint", cmdAndArgs...)
 
 	stdout, err := cmd.StdoutPipe()
 	if err != nil {

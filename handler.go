@@ -24,7 +24,7 @@ func printHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = PrintTag(req.Text, req.QrText)
+	err = PrintTag(req.Text, req.CodeText, req.CodeType)
 	if err != nil {
 		setStatus(w, http.StatusInternalServerError, err.Error())
 		return

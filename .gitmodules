@@ -1,0 +1,3 @@
+[submodule "niimprint"]
+	path = niimprint
+	url = https://github.com/AndBondStyle/niimprint.git
